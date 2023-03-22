@@ -16,12 +16,13 @@ if (media >= 6) {
 }
 
 
-if (media < 6) {
+else {
 
     console.log("A média do aluno é:",  media)
     console.log("Você foi Reprovado :D")
 
 }
+
 
 
 
