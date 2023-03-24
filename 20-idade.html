@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+
+<body>
+
+    <script>
+
+        let nome = window.prompt("Qual o seu nome?");
+        window.alert("Ok " + nome + " Vamos continuar");
+
+        let idade = window.prompt("Qual a sua idade?");
+
+        if (idade >= 18) {
+            window.alert("Acesso Permitido! Usuário maior de idade");
+
+            window.document.body.style.backgroundColor = "green";
+            window.document.write("Site Pagina Inicial")
+        }
+
+        else {
+            window.alert("Acesso Negado! Você tem menos de 18 anos! vá assistir bom dia e companhia ^^ ");
+            window.document.body.style.backgroundColor = "red";
+            window.document.write("Acesso Negado")
+        }
+
+    </script>
+
+</body>
+
+</html>
