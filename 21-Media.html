@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+<body>
+
+    <script>
+        //Receba o nome do aluno e suas 4 respectivas notas 
+
+        const nome = window.prompt("Qual o seu nome?");
+        window.alert("Ok " + nome + " Vamos continuar");
+
+        let Nota1 = +window.prompt("Qual a nota do primeiro semestre?");
+
+        let Nota2 = +window.prompt("Qual a nota do segundo semestre?");
+
+        let Nota3 = +window.prompt("Qual a nota do terceito semestre?");
+
+        let Nota4 = +window.prompt("Qual a nota do Quarto semestre?");
+
+        // let Nota1 =  Number.parseFloat(window.prompt("Qual a nota do primeiro semestre?"));
+
+        // let Nota2 = Number.parseFloat(window.prompt("Qual a nota do segundo semestre?"));
+
+        // let Nota3 = Number.parseFloat(window.prompt("Qual a nota do terceito semestre?"));
+
+        // let Nota4 = Number.parseFloat(window.prompt("Qual a nota do Quarto semestre?"));
+
+        // Parsefloat = numero flutuante ou seja um numero que pode ter virgula
+        // ParseInt = Numero sem virgula
+
+        // Nota1 = Number.parseFloat(Nota1);
+        // Nota2 = Number.parseFloat(Nota2);
+        // Nota3 = Number.parseFloat(Nota3);
+        // Nota4 = Number.parseFloat(Nota4);
+        const Media = (Nota1 + Nota2 + Nota3 + Nota4) / 4;
+
+
+        window.alert(`Olá ${nome}, a sua média final é de ${Media}`);
+
+        if (Media >= 6) {
+
+            window.alert("Você infelizmente foi Aprovado :(");
+
+            console.log(`Olá ${nome}, a sua média final é de ${Media}`);
+            console.log("Você infelizmente foi Aprovado :(");
+
+        }
+
+        else {
+            window.alert("Você  foi reprovado :D");
+            console.log(`Olá ${nome}, a sua média final é de ${Media}`);
+            console.log("Você  foi reprovado :D");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
