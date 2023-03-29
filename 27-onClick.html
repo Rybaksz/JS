@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 40vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div{
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            border: 2px dashed #444;
+
+
+        }
+
+
+    </style>
+</head>
+
+<body id="fundo">
+  
+    <button onclick="body1()">Mude a cor do fundo!</button>
+    <button onclick="body2()">Mude a cor do fundo!</button>
+    <button onclick="body3()">Mude a cor do fundo!</button>
+    <button onclick="body4()">Volte ao normal!</button>
+
+
+
+    <div id="div1">
+        <button onclick="colorir1( )">Click Aqui!</button>
+    </div>
+    <div id="div2">
+        <button onclick="colorir2()">Click Aqui!</button>
+    </div>
+    <div id="div3">
+        <button onclick="colorir3()">Click Aqui!</button>
+    </div>
+    <div id="div4">
+        <button onclick="colorir4()">Click Aqui!</button>
+    </div>
+
+    <script>
+             function colorir1 (){
+
+div1.style.backgroundColor = "Red";
+
+}
+function colorir2 (){
+
+div2.style.backgroundColor = "Blue";
+
+}
+function colorir3 (){
+
+div3.style.backgroundColor = "Green";
+
+}
+function colorir4 (){
+
+div4.style.backgroundColor = "Yellow";
+
+}
+
+function body1 (){
+
+fundo.style.backgroundColor = "Blue";
+
+}
+function body2 (){
+
+fundo.style.backgroundColor = "Red";
+
+}
+function body3 (){
+
+fundo.style.backgroundColor = "Pink";
+
+}
+function body4 (){
+
+fundo.style.backgroundColor = "White";
+
+}
+
+
+
+    </script>
+
+ 
+</body>
+
+</html>

@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>getElementsByClassName</title>
+    <style>
+
+        *{
+
+ margin: 0;
+ padding: 0;
+overflow-x: hidden;
+        }
+
+
+
+    </style>
 </head>
 
 <body>
@@ -19,12 +31,51 @@
     <div class="footer"></div>
 
     <script>
-        let conteudoTopo = document.getElementsByClassName("conteudo-principal")[0];
-        conteudoTopo.style.width = "300px";
-        conteudoTopo.style.height = "300px";
-        conteudoTopo.style.backgroundcolor = "orange";
+
+       // let conteudoTopo = document.getElementsByClassName("conteudo-principal")[0];
+       // conteudoTopo.style.width = "300px";
+       // conteudoTopo.style.height = "300px";
+       // conteudoTopo.style.backgroundColor = "orange";
+
+       let primeiradiv = document.getElementsByClassName("conteudo-principal")[0];
+       primeiradiv.style.width = "500px";
+       primeiradiv.style.height = "350px";
+       primeiradiv.style.backgroundColor = "purple";
+
+       // InnerText - Modifica somente o texto de dentro da tag 
+       primeiradiv.innerText = "<strong>First Div</strong>";
+
+       //InnerHTML - Consegue interpretar o texto e as tags HTML
+       primeiradiv.innerHTML = "<strong>First Div</strong>"
 
 
+       
+       let SegundaDiv= document.getElementsByClassName("conteudo-principal")[1];
+       SegundaDiv.style.width = "250x";
+       SegundaDiv.style.height = "130px";
+       SegundaDiv.innerHTML = "<h2>Segunda Div</h2>"
+       let paragrafo = document.getElementsByTagName("h2")[0];
+       paragrafo.style.color = "red";
+
+
+       
+       let TerceiraDiv= document.getElementsByClassName("conteudo-principal")[2];
+       TerceiraDiv.style.width = "350px";
+       TerceiraDiv.style.height = "200px";
+       TerceiraDiv.innerHTML = "<p>Última Div</p>"
+       TerceiraDiv.style.backgroundColor = "lightGreen";
+       
+
+       let foot= document.getElementsByClassName("footer")[0];
+       foot.style.width = "100vw";
+       foot.style.height = "30vh";
+       foot.style.backgroundColor = "#444";
+
+    // Sujeito Programador
+    // Dev Samurai
+
+      
+       
     </script>
 
 </body>
