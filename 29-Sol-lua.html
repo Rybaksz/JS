@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol e Lua</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #00BFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        img {
+
+            width: 300px;
+
+        }
+ 
+        
+    </style>
+</head>
+
+
+<body id="fundo" >
+    <div>
+        <img id="imgPeriodo" src="./img/sol.png" alt="Imagem ilustrativa do sol" title="sol">
+    </div>
+
+    <script>
+        imgPeriodo.addEventListener("mouseenter", noite);
+        imgPeriodo.addEventListener("mouseleave", dia);
+
+        function noite() {
+
+            fundo.style.backgroundColor = "black";
+            imgPeriodo.setAttribute("src", "./img/lua.png")
+            imgPeriodo.setAttribute("title", "Lua")
+            imgPeriodo.setAttribute("alt", "Uma imagem da lua cheia")
+
+        }
+
+        function dia() {
+
+            fundo.style.backgroundColor = "black";
+            imgPeriodo.setAttribute("src", "./img/sol.png")
+            imgPeriodo.setAttribute("title", "Sol")
+            imgPeriodo.setAttribute("alt", "Uma imagem do Sol")
+    
+        }
+    </script>
+</body>
+</html>
