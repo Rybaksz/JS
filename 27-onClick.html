@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             height: 40vw;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
         }
 
-        div{
+        div {
 
             display: flex;
             justify-content: space-evenly;
@@ -25,13 +25,11 @@
 
 
         }
-
-
     </style>
 </head>
 
 <body id="fundo">
-  
+
     <button onclick="body1()">Mude a cor do fundo!</button>
     <button onclick="body2()">Mude a cor do fundo!</button>
     <button onclick="body3()">Mude a cor do fundo!</button>
@@ -40,66 +38,57 @@
 
 
     <div id="div1">
-        <button onclick="colorir1( )">Click Aqui!</button>
+        <button onclick="colorir('div1','lightcoral')">Click Aqui!</button>
     </div>
     <div id="div2">
-        <button onclick="colorir2()">Click Aqui!</button>
+        <button onclick="colorir('div2' , 'lightblue')">Click Aqui!</button>
     </div>
     <div id="div3">
-        <button onclick="colorir3()">Click Aqui!</button>
+        <button onclick="colorir('div3' , 'lightpink')">Click Aqui!</button>
     </div>
     <div id="div4">
-        <button onclick="colorir4()">Click Aqui!</button>
+        <button onclick="colorir('div4' , 'lightgreen')">Click Aqui!</button>
     </div>
 
+
     <script>
-             function colorir1 (){
 
-div1.style.backgroundColor = "Red";
 
-}
-function colorir2 (){
+        function colorir(divClick,cor) {
+            
+            let div = document.getElementById(divClick);
+            div.style.backgroundColor = cor;
 
-div2.style.backgroundColor = "Blue";
+        }
 
-}
-function colorir3 (){
 
-div3.style.backgroundColor = "Green";
 
-}
-function colorir4 (){
+        function body1() {
 
-div4.style.backgroundColor = "Yellow";
+            fundo.style.backgroundColor = "Blue";
 
-}
+        }
+        function body2() {
 
-function body1 (){
+            fundo.style.backgroundColor = "Red";
 
-fundo.style.backgroundColor = "Blue";
+        }
+        function body3() {
 
-}
-function body2 (){
+            fundo.style.backgroundColor = "Pink";
 
-fundo.style.backgroundColor = "Red";
+        }
+        function body4() {
 
-}
-function body3 (){
+            fundo.style.backgroundColor = "White";
 
-fundo.style.backgroundColor = "Pink";
-
-}
-function body4 (){
-
-fundo.style.backgroundColor = "White";
-
-}
+        }
 
 
 
     </script>
 
- 
+
 </body>
 
 </html>
